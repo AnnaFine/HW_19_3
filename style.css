@@ -1,0 +1,30 @@
+.ctx-menu {
+    display: none;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    position: fixed;
+    background-color: #fff;
+}
+
+.ctx-menu.active {
+    display: flex;
+}
+
+.ctx-menu .item {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.ctx-menu .item:hover {
+    background-color: rgba(131, 197, 197, 0.407)
+}
+
+.ctx-menu .item:last-child {
+    border-bottom: none;
+}
